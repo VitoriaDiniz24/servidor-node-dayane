@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3,
+        #c850c0
+    );
+
+    color: #4a1c2a;
+
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+
+    padding: 55px 50px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    animation: aparecer 1.5s ease;
+}
+
+.heart {
+    font-size: 65px;
+
+    margin-bottom: 20px;
+
+    animation: pulsar 1.5s infinite;
+}
+
+.intro {
+    font-size: 18px;
+
+    color: #8a5365;
+
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 55px;
+
+    color: #d6336c;
+
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 26px;
+
+    color: #8f3151;
+
+    margin-bottom: 25px;
+}
+
+.linha {
+    width: 80px;
+    height: 3px;
+
+    background: #e75480;
+
+    margin: 0 auto 30px;
+}
+
+.mensagem {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+    color: #5b2638;
+}
+
+.destaque {
+    font-size: 21px;
+
+    font-weight: bold;
+
+    color: #d6336c;
+
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 20px;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #d6336c;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(214, 51, 108, 0.3);
+
+    &:hover {
+        transform: scale(1.08);
+
+        background: #b82b59;
+    }
+}
+
+.surpresa {
+    display: none;
+
+    margin-top: 25px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #d6336c;
+
+    animation: aparecer 1s ease;
+}
+
+.surpresa.mostrar {
+    display: block;
+}
+
+.assinatura {
+    margin-top: 40px;
+
+    font-size: 18px;
+
+    color: #795060;
+
+    line-height: 1.7;
+
+    span {
+        font-size: 22px;
+
+        color: #d6336c;
+
+        font-weight: bold;
+    }
+}
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    .card {
+        padding: 40px 25px;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .mensagem {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .heart {
+        font-size: 55px;
+    }
+}
