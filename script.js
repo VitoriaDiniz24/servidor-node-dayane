@@ -1,7 +1,5 @@
 const botao = document.getElementById("botaoAmor");
 const surpresa = document.getElementById("surpresa");
-const containerCoracoes = document.querySelector(".hearts");
-
 
 // Botão da surpresa
 
@@ -11,7 +9,7 @@ botao.addEventListener("click", () => {
 
     if (surpresa.classList.contains("mostrar")) {
 
-        botao.textContent = "Eu te amo! ❤️";
+        botao.textContent = "Eu te amo!";
 
     } else {
 
