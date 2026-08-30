@@ -1,7 +1,4 @@
 const botao = document.getElementById("botaoAmor");
-const surpresa = document.getElementById("surpresa");
-const containerCoracoes = document.querySelector(".hearts");
-
 
 // Botão da surpresa
 
