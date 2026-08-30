@@ -1,4 +1,3 @@
-```javascript
 const botao = document.getElementById("botaoAmor");
 const surpresa = document.getElementById("surpresa");
 const containerCoracoes = document.querySelector(".hearts");
@@ -55,4 +54,3 @@ function criarCoracao() {
 // Criar novos corações a cada 500ms
 
 setInterval(criarCoracao, 500);
-```
